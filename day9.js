@@ -148,3 +148,45 @@ const sum = myArray2.reduce((accumulator, currentValue) => {
 }, 0)
 
 console.log(sum)
+
+// 18.
+
+// 19.
+
+/* some() checks if some (at least 1) element in the array matches the condition, whilst every() checks if ALL elements match the condition. */
+
+// 20.
+
+
+const isAnyLongerThanSeven = names.some(nameLength => nameLength.length > 7)
+console.log(isAnyLongerThanSeven)
+
+// 21.
+
+const doAllContainLand = names.every(nameContains => nameContains.includes("land"))
+
+console.log(doAllContainLand)
+
+// 22.
+
+/* Find finds something in and returns that thing, findIndex (if found) returns the index position of the element */
+
+// 23.
+
+const iNeedToFindTheFirstCountryWithSixCharacters = countries.find(country => country.length = 6)
+console.log(iNeedToFindTheFirstCountryWithSixCharacters)
+
+// 24.
+
+const iNeedToFindIndexNow = countries.findIndex(country => country.length = 6)
+console.log(iNeedToFindIndexNow)
+
+// 25.
+
+const iNeedToFindNorway = countries.findIndex(country => country.includes("Norway"))
+console.log(iNeedToFindNorway)
+
+// 26.
+
+const iNeedToFindRussia = countries.findIndex(country => country.includes("Russia"))
+console.log(iNeedToFindRussia)
